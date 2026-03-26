@@ -1,0 +1,177 @@
+/* =========================
+   🎨 ROOT VARIABLES
+   ========================= */
+:root {
+
+  /* 🎯 Background */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f8fafc;
+
+  /* 📝 Text */
+  --color-text: #0f172a;
+  --color-text-secondary: #475569;
+
+  /* 🔵 Primary */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-primary-active: #1d4ed8;
+
+  /* ⚪ Neutral */
+  --color-white: #ffffff;
+
+  /* 🌫️ Shadows */
+  --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  /* 🔤 Typography */
+  --font-title: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --text-hero: 48px;
+  --text-subtitle: 22px;
+  --text-section-title: 30px;
+  --text-body: 16px;
+  --text-small: 14px;
+}
+
+
+/* =========================
+   🔄 RESET
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================
+   🌍 BASE STYLES
+   ========================= */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+
+/* =========================
+   🔤 TYPOGRAPHY
+   ========================= */
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+
+h1 {
+  font-size: var(--text-hero);
+}
+
+h2 {
+  font-size: var(--text-section-title);
+}
+
+h3 {
+  font-size: var(--text-subtitle);
+}
+
+p {
+  font-size: var(--text-body);
+}
+
+
+
+
+
+/*HEADER*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 15px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/*style for the name*/
+.name{
+    margin: 0;
+}
+
+/*MENU*/
+.menu-list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: var(--color-bg);
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.menu-link:hover{
+    color: var(--color-primary-hover);
+    background-color: var(--color-bg-secondary);
+    border-radius: 25px;
+}
+
+/*INTRO*/
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/01_Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contentbanner{
+    width: 60%;
+    text-align: center;
+    color: var(--color-bg);
+}
+
+.contentbanner h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contentbanner a{
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border: 2px solid;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.contentbanner a:hover{
+    background-color: var(--color-primary-hover);
+    color: var(--color-bg-secondary);
+    border-radius: 30px;
+}
