@@ -3,30 +3,44 @@
    ========================= */
 :root {
 
-  /* 🎯 Background */
+  /* 🎯 Background colors
+     Define the main page background and section contrast */
   --color-bg: #ffffff;
   --color-bg-secondary: #f8fafc;
 
-  /* 📝 Text */
+  /* 📝 Text colors
+     Primary for main content, secondary for less important text */
   --color-text: #0f172a;
   --color-text-secondary: #475569;
 
-  /* 🔵 Primary */
+  /* 🔵 Primary colors
+     Used for buttons, links and interactive elements */
   --color-primary: #3b82f6;
   --color-primary-hover: #2563eb;
   --color-primary-active: #1d4ed8;
 
-  /* ⚪ Neutral */
+  /* ⚪ Neutral colors
+     Used for cards, backgrounds and contrast */
   --color-white: #ffffff;
 
-  /* 🌫️ Shadows */
+  /* 📊 Project status colors
+     Used to visually represent the state of each project */
+  --completed: #0ced0c; 
+  --in-progress: #f59e0b;
+  --planning: #64748b;
+
+  /* 🌫️ Shadows
+     Light and hover shadows to create depth */
   --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.05);
   --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.1);
 
-  /* 🔤 Typography */
+  /* 🔤 Typography
+     Fonts used for titles and body text */
   --font-title: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
 
+  /* 📏 Font sizes
+     Consistent text scale across the website */
   --text-hero: 48px;
   --text-subtitle: 22px;
   --text-section-title: 30px;
@@ -38,6 +52,7 @@
 /* =========================
    🔄 RESET
    ========================= */
+/* Remove default browser styles for consistency */
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +71,7 @@ a {
 /* =========================
    🌍 BASE STYLES
    ========================= */
+/* Global styles applied to the whole page */
 body {
   font-family: var(--font-body);
   background-color: var(--color-bg);
@@ -67,6 +83,7 @@ body {
 /* =========================
    🔤 TYPOGRAPHY
    ========================= */
+/* Headings use a different font to create hierarchy */
 h1, h2, h3 {
   font-family: var(--font-title);
 }
@@ -88,10 +105,8 @@ p {
 }
 
 
-
-
-
 /*HEADER*/
+/* Main navigation bar */
 .header{
     display: flex;
     align-items: center;
@@ -104,12 +119,13 @@ p {
     z-index: 10;
 }
 
-/*style for the name*/
+/* Website name/logo */
 .name{
     margin: 0;
 }
 
 /*MENU*/
+/* Navigation list */
 .menu-list{
     list-style: none;
     display: flex;
@@ -118,6 +134,7 @@ p {
     padding: 0;
 }
 
+/* Navigation links */
 .menu-link{
     text-decoration: none;
     color: var(--color-bg);
@@ -125,13 +142,16 @@ p {
     padding: 10px 20px;
 }
 
+/* Hover effect for menu links */
 .menu-link:hover{
     color: var(--color-primary-hover);
     background-color: var(--color-bg-secondary);
     border-radius: 25px;
 }
 
+
 /*INTRO*/
+/* Full screen banner section */
 .banner{
     width: 100%;
     height: 100vh;
@@ -143,9 +163,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
+/* Banner content container */
 .contentbanner{
     width: 60%;
     text-align: center;
@@ -157,6 +177,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Banner buttons */
 .contentbanner a{
     background-color: var(--color-primary);
     color: var(--color-bg);
@@ -170,13 +191,16 @@ p {
     margin-left: 10px;
 }
 
+/* Button hover effect */
 .contentbanner a:hover{
     background-color: var(--color-primary-hover);
     color: var(--color-bg-secondary);
     border-radius: 30px;
 }
 
+
 /*PROJECTS*/
+/* Projects section container */
 .projects{
   padding: 80px 10%;
   background-color: var(--color-bg-secondary);
@@ -190,43 +214,71 @@ p {
 /* =========================
    🔥 FEATURED PROJECT
    ========================= */
-   .project-featured{
+/* Main highlighted project */
+.project-featured{
     display: flex;
     gap: 40px;
     align-items: center;
     margin-bottom: 60px;
-   }
+}
 
-   .project-featured img{
+/* Featured project image */
+.project-featured img{
     width: 50%;
     border-radius: 10px;
-   }
+}
 
-   .project-info{
+/* Featured project content */
+.project-info{
     width: 50%;
-   }
+}
 
-   .project-info h3{
+.project-info h3{
     margin-bottom: 15px;
-   }
+}
 
-   .project-info p{
+.project-info p{
     margin-bottom: 10px;
-   }
+}
 
-   .project-info .tech{
+/* Technologies text */
+.project-info .tech{
     color: var(--color-text-secondary);
     font-size: var(--text-small);
-   }
+}
 
-   /* Estat projecte */
-.status {
+/* Project status badges */
+.completed {
+  background-color: var(--completed);
+  border-radius: 25px;
+  color: var(--color-white);
+  padding: 5px 12px;
   font-weight: bold;
-  color: var(--color-primary);
+  display: inline-block;
   margin-bottom: 10px;
 }
 
-/* Enllaços projectes */
+.in-progress{
+  background-color: var(--in-progress);
+  border-radius: 25px;
+  color: var(--color-white);
+  padding: 5px 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.planning{
+  background-color: var(--planning);
+  border-radius: 25px;
+  color: var(--color-white);
+  padding: 5px 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Project links (GitHub / Live demo) */
 .project-links a {
   display: inline-block;
   margin-right: 10px;
@@ -239,20 +291,23 @@ p {
   transition: 0.2s;
 }
 
+/* Links hover effect */
 .project-links a:hover {
   background-color: var(--color-primary-hover);
   color: var(--color-bg-secondary);
 }
 
-   /* =========================
+/* =========================
    🔽 SMALL PROJECTS
    ========================= */
-   .project-small{
+/* Container for smaller projects */
+.project-small{
     display: flex;
     gap: 20px;
-   }
+}
 
-   .project-card{
+/* Individual project card */
+.project-card{
     flex: 1;
     background-color: var(--color-white);
     padding: 20px;
@@ -261,11 +316,13 @@ p {
     transition: 0.2s;
 }
 
+/* Card hover effect */
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
 }
 
+/* Project image */
 .project-card img{
   width: 100%;
   border-radius: 10px; 
@@ -275,7 +332,231 @@ p {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Image hover effect */
 .project-card img:hover{
   transform: scale(1.05);
   box-shadow: var(--shadow-hover);
+}
+
+
+/*SKILLS SECTION*/
+/* Skills section container */
+.skills{
+  padding: 80px 10%;
+  background-color: var(--color-bg);
+}
+
+.skills h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-main{
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.skill{
+  margin-bottom: 25px;
+}
+
+.skill p{
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Progress bar background */
+.progress-bar{
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-bg-secondary);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Progress fill */
+.progress{
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  width: 10;
+  transition: width 1s ease;
+}
+
+/* Skill levels */
+.progress.html{
+  width: 90%;
+}
+
+.progress.css{
+  width: 85%;
+}
+
+.progress.js{
+  width: 65%;
+}
+
+/* Extra skills list */
+.skills-extra{
+  text-align: center;
+}
+
+.skills-extra p{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.skills-extra ul{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Skill badges */
+.skills-extra li{
+  background-color: var(--color-bg-secondary);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: var(--text-small);
+}
+
+
+/*ABOUT ME*/
+/* About section layout */
+.about{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 80px 10%;
+  background-color: var(--color-bg-secondary);
+}
+
+/* Profile image */
+.about-img img{
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-light);
+}
+
+/* Image hover effect */
+.about-img img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* About content */
+.about-content{
+  max-width: 500px;
+}
+
+.about-content h2{
+  margin-bottom: 20px;
+}
+
+.about-content p{
+  margin-bottom: 15px;
+}
+
+/* Info card */
+.about-info{
+  background-color: var(--color-white);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-light);
+  margin-bottom: 20px;
+}
+
+/* Info hover effect */
+.about-info:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.about-info p{
+  margin: 5px 0;
+  font-size: var(--text-small);
+}
+
+/* Hobbies container */
+.about-hobbies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Hobby badges */
+.about-hobbies span{
+  background-color: var(--color-bg);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: var(--text-small);
+  transition: 0.2s;
+}
+
+/* Hobby hover */
+.about-hobbies span:hover{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+
+/*CONTACT*/
+/* Contact section with CTA */
+.contact{
+  text-align: center;
+  padding: 80px 10%;
+  background-color: var(--color-bg-secondary);
+}
+
+.contact h2{
+  margin-bottom: 20px;
+}
+
+/* Contact text */
+.contact-text{
+  max-width: 500px;
+  margin: 0 auto 30px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Contact buttons container */
+.contact-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Contact buttons */
+.contact-buttons a{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+/* Button hover effect */
+.contact-buttons a:hover{
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+}
+
+
+/*footer*/
+/* Footer section */
+.footer{
+  background-color: var(--color-text);
+  color: var(--color-white);
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid --color-text-secondary;
+}
+
+/* Footer text */
+.footer p{
+  font-size: var(--text-small);
 }
