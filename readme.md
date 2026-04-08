@@ -28,7 +28,7 @@ This portfolio is structured to give a clear overview of my abilities and projec
 
 - **HTML** – Structure of the website  
 - **CSS** – Layout, colors, typography, and responsive design  
-
+- **JavaScript** – backUp button, effect menu
 ---
 ## Future funtions
 - Responsive layout for mobile, tablet, and desktop 
