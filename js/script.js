@@ -31,3 +31,44 @@ topBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+
+
+const buttons = document.querySelectorAll('.filter-buttons button');
+const projects = document.querySelectorAll('.project-card, .project-info');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+
+    const filter = button.getAttribute('data-filter');
+
+    projects.forEach(project => {
+      const category = project.getAttribute('data-category');
+
+      if (filter === 'all' || category === filter) {
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+
+  });
+});
+
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+
+function showOnScroll() {
+  hiddenElements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (position < screenHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', showOnScroll);
+window.addEventListener('load', showOnScroll);

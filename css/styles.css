@@ -339,6 +339,26 @@ p {
 }
 
 
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-buttons button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-buttons button:hover {
+  background-color: var(--color-primary-hover);
+}
+
 /*SKILLS SECTION*/
 /* Skills section container */
 .skills{
@@ -582,4 +602,17 @@ p {
 .top-btn:hover {
   background-color: var(--color-primary-hover);
   transform: translateY(-3px);
+}
+
+/* Hidden state */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Visible state */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.6s ease;
 }
