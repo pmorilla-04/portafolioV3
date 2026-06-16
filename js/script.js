@@ -1,3 +1,7 @@
+/* =========================================================
+   🔗 SMOOTH SCROLL NAVIGATION
+   Smooth scroll for anchor links (#sections)
+   ========================================================= */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -12,7 +16,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-
+/* =========================================================
+   ⬆️ BACK TO TOP BUTTON
+   Show/hide button based on scroll position
+   ========================================================= */
 const topBtn = document.querySelector('.top-btn');
 
 // Show button when scrolling down
@@ -33,7 +40,10 @@ topBtn.addEventListener('click', () => {
 });
 
 
-
+/* =========================================================
+   🎯 PROJECT FILTER SYSTEM
+   Filters projects by category (HTML / JS / Java / All)
+   ========================================================= */
 const buttons = document.querySelectorAll('.filter-buttons button');
 const projects = document.querySelectorAll('.project-card, .project-info');
 
@@ -56,9 +66,14 @@ buttons.forEach(button => {
 });
 
 
-
+/* =========================================================
+   ✨ SCROLL ANIMATION (REVEAL EFFECT)
+   Adds animation when elements enter viewport
+   ========================================================= */
 const hiddenElements = document.querySelectorAll('.hidden');
 
+
+// Checks element position and reveals it when visible
 function showOnScroll() {
   hiddenElements.forEach(el => {
     const position = el.getBoundingClientRect().top;
@@ -70,5 +85,7 @@ function showOnScroll() {
   });
 }
 
+
+// Trigger animation on scroll and initial load
 window.addEventListener('scroll', showOnScroll);
 window.addEventListener('load', showOnScroll);
