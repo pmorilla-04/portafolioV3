@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pau Morilla Codina</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!--ara creem la capçalera-->
+    <header class="header">
+
+        <h2 class="name">Pau Morilla Codina</h2>
+
+        <!--ara creem el menu-->
+        <nav class="menu">
+        
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#intro" class="menu-link">Introducció</a></li>
+                <li class="menu-item"><a href="#projects" class="menu-link">Projectes</a></li>
+                <li class="menu-item"><a href="#skills" class="menu-link">Habilitats</a></li>
+                <li class="menu-item"><a href="#about" class="menu-link">Sobre mi</a></li>
+                <li class="menu-item"><a href="#contact" class="menu-link">Contacte</a></li>
+
+                <li class="menu-item language-selector">
+                    <a href="#" class="menu-link">CA</a>
+                    |
+                    <a href="../es/index.html" class="menu-link">ES</a>
+                    |
+                    <a href="../eng/index.html" class="menu-link">EN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--ARA CREEM LA SECCIÓ D'INTRODUCCIÓ-->
+    <section class="banner" id="intro">
+        <div class="contentbanner">
+            <h2>Sóc en Pau, estudiant de Desenvolupament d'Aplicacions Web (DAW)</h2>
+            <p>Apassionat per la programació i el desenvolupament web</p>
+            <a href="#">Projectes</a>
+            <a href="#">Contacte</a>
+        </div>
+    </section>
+
+  <!-- SECCIO DE PROJECTES-->
+<section class="projects" id="projects">
+    <h2>Projectes</h2>
+
+    <!-- buttons de filtratje -->
+    <div class="filter-buttons">
+        <button data-filter="all">TOT</button>
+        <button data-filter="html">HTML</button>
+        <button data-filter="js">JavaScript</button>
+        <button data-filter="java">Java</button>
+    </div>
+
+    <!-- PROJECTE DESTECAT -->
+    <div class="project-featured hidden" data-category="java">
+        <img src="../img/02_mockup_entrenaments.png" alt="Entrenaments">
+
+        <div class="project-info">
+            <h3>Gestor d'Entrenaments Esportius</h3>
+
+            <p>
+                Una aplicació Java dissenyada per gestionar sessions d'entrenament esportiu a través d'un sistema basat en rols. La plataforma permet als atletes, entrenadors i administradors col·laborar de manera eficient mentre fan un seguiment del progrés de l'entrenament i de l'activitat de l'aplicació.
+            </p>
+            
+            <h4>Funcionalitats</h4>
+
+            <ul class="features-list">
+                <li>Sistema multirol (atleta, entrenador, administrador)</li>
+                <li>CRUD de la sessió d'entrenament (crear, editar, suprimir, filtrar)</li>
+                <li>Validació i comentaris de l'entrenador</li>
+                <li>Gestió d'usuaris i entrenaments</li>
+                <li>Estadístiques i seguiment del rendiment</li>
+                <li>Registres d'activitat diària</li>
+            </ul>
+
+            <p class="tech">JAVA · POO · SWING · XML · MySQL</p>
+
+            <p class="status">
+                <span class="completed">Completat</span>
+            </p>
+
+            <div class="project-links">
+                <a href="https://github.com/pmorilla-04/ProjecteFinal_GestorEntranaments" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTES PETITS-->
+    <div class="project-small">
+
+        <!-- Mario -->
+        <div class="project-card hidden" data-category="html">
+            <img src="../img/03_mockup-mario.png" alt="Mario Website">
+            <h3>Web Mario</h3>
+            <p>Lloc web d'estil retro inspirat en Super Mario.</p>
+            <p class="tech">HTML · CSS · JavaScript</p>
+            <p class="status"><span class="completed">Completat</span></p>
+            <div class="project-links">
+                <a href="https://github.com/pmorilla-04/supermario" target="_blank">GitHub</a>
+                <a href="https://bross.webcindario.com" target="_blank">Website</a>
+            </div>
+        </div>
+
+        <!-- Ski -->
+        <div class="project-card hidden" data-category="html">
+            <img src="../img/04_mockup-esqui.png" alt="Ski Website">
+            <h3>Web Ski </h3>
+            <p>Projecte d'interfície d'usuari neta sobre experiències d'esquí.</p>
+            <p class="tech">HTML · CSS · JavaScript · Bootstrap</p>
+            <p class="status"><span class="completed">Completat</span></p>
+            <div class="project-links">
+                <a href="https://github.com/pmorilla-04/esqu-/tree/main" target="_blank">GitHub</a>
+                <a href="https://esqui.webcindario.com" target="_blank">Website</a>
+            </div>
+        </div>
+
+        <!-- Ciclisme -->
+        <div class="project-card hidden" data-category="html">
+            <img src="../img/06_mockup-viatjesbici.png" alt="Cycling Website">
+            <h3>Web Ciclisme</h3>
+            <p>Projecte sobre rutes i experiències ciclistes.</p>
+            <p class="tech">HTML · CSS · WordPress · Elementor</p>
+            <p class="status"><span class="completed">Completat</span></p>
+        </div>
+
+        <!-- Calculator -->
+        <div class="project-card hidden" data-category="js">
+            <img src="../img/05_mockup-calculadora.png" alt="Calculator">
+            <h3>Calculadora basica</h3>
+            <p>Projecte per pràctica els conceptes bàsics de JavaScript.</p>
+            <p class="tech">HTML · CSS · JavaScript</p>
+            <p class="status"><span class="completed">Completat</span></p>
+            <div class="project-links">
+                <a href="https://github.com/pmorilla-04/calculadora" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!--ARA CREM LA SECCIO DE SKILLS-->
+    <section class="skills hidden" id="skills">
+
+  <h2>Skills</h2>
+
+  <!-- 🔥 Skills  -->
+  <div class="skills-main">
+
+    <div class="skill">
+      <p>HTML</p>
+      <div class="progress-bar">
+        <div class="progress html"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>CSS</p>
+      <div class="progress-bar">
+        <div class="progress css"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="progress-bar">
+        <div class="progress js"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ALTRES EINES -->
+  <div class="skills-extra">
+    <p>Altres eines:</p>
+    <ul>
+      <li>WordPress</li>
+      <li>Elementor</li>
+      <li>Git & GitHub</li>
+      <li>Java (Swing, XML)</li>
+    </ul>
+  </div>
+
+</section>
+
+    <!--ARA CREM LA SECCIO SOBRE MI-->
+    <section class="about hidden" id="about">
+
+        <div class="about-img">
+            <img src="../img/07_about-me.jpeg" alt="Pau">
+        </div>
+
+        <div class="about-content">
+            <h2>SOBRE MI</h2>
+            <p>Sóc un estudiant de Desenvolupament d'Aplicacions Web (DAW) apassionat per la programació i el desenvolupament front-end.</p>
+            <p>M'agrada crear llocs web nets i interactius mentre milloro contínuament les meves habilitats.</p> 
+        </div>
+
+        <div class="about-info">
+            <p><strong>Nom: </strong>Pau</p>
+            <p><strong>Rol: </strong>Estudiant de DAW</p>
+            <p><strong>Focus: </strong>Desenvolupament front-end</p>
+        </div>
+        
+        <div class="about-hobbies">
+            <span><i class="fa-solid fa-code"></i>Desenvolupament web</span>
+            <span><i class="fa-solid fa-person-biking"></i> Ciclisme</span>
+            <span><i class="fa-solid fa-person-skiing"></i> Ski</span>
+            <span><i class="fa-solid fa-van-shuttle"></i>Vida camper</span>
+        </div>
+    </section>
+
+    <!--ARA CREM LA SECCIO DE CONTACTE-->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+
+        <p class="contact-text">
+            Us interessa treballar junts o teniu alguna idea al cap?<br>
+            No dubteu a contactar amb mi per correu electrònic o a connectar amb mi a LinkedIn.<br>
+            M'encantaria saber de vosaltres!
+        </p>
+
+        <div class="contact-buttons">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="mailto:pmorilla.dev@gmail.com">Email</a>
+        </div>
+    </section>
+    <!--ARA CREM EL FOOTER-->
+    <footer class="footer">
+        <p>© 2026 <strong>Disseny de Pmorilla</strong>• Tots els drets reservats</p>
+        <p>Estudiant de disseny i programació web</p>
+    </footer>
+
+    <button class="top-btn">↑</button>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

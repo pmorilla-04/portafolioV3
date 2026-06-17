@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pau Morilla Codina</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <h2 class="name">Pau Morilla Codina</h2>
+
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#intro" class="menu-link">Introducción</a></li>
+                <li class="menu-item"><a href="#projects" class="menu-link">Proyectos</a></li>
+                <li class="menu-item"><a href="#skills" class="menu-link">Habilidades</a></li>
+                <li class="menu-item"><a href="#about" class="menu-link">Sobre mí</a></li>
+                <li class="menu-item"><a href="#contact" class="menu-link">Contacto</a></li>
+
+                <li class="menu-item language-selector">
+                    <a href="../ca/index.html" class="menu-link">CA</a>
+                    |
+                    <a href="#" class="menu-link">ES</a>
+                    |
+                    <a href="../eng/index.html" class="menu-link">EN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner" id="intro">
+        <div class="contentbanner">
+            <h2>Soy Pau, estudiante de Desarrollo de Aplicaciones Web (DAW)</h2>
+            <p>Apasionado por la programación y el desarrollo web</p>
+            <a href="#">Proyectos</a>
+            <a href="#">Contacto</a>
+        </div>
+    </section>
+
+<section class="projects" id="projects">
+    <h2>Proyectos</h2>
+
+    <div class="filter-buttons">
+        <button data-filter="all">TODO</button>
+        <button data-filter="html">HTML</button>
+        <button data-filter="js">JavaScript</button>
+        <button data-filter="java">Java</button>
+    </div>
+
+    <div class="project-featured hidden" data-category="java">
+        <img src="../img/02_mockup_entrenaments.png" alt="Entrenamientos">
+
+        <div class="project-info">
+            <h3>Gestor de Entrenamientos Deportivos</h3>
+
+            <p>
+                Una aplicación Java diseñada para gestionar sesiones de entrenamiento deportivo mediante un sistema basado en roles. La plataforma permite a atletas, entrenadores y administradores colaborar de manera eficiente mientras realizan un seguimiento del progreso del entrenamiento y de la actividad de la aplicación.
+            </p>
+            
+            <h4>Funcionalidades</h4>
+
+            <ul class="features-list">
+                <li>Sistema multirrol (atleta, entrenador, administrador)</li>
+                <li>CRUD de la sesión de entrenamiento (crear, editar, eliminar, filtrar)</li>
+                <li>Validación y comentarios del entrenador</li>
+                <li>Gestión de usuarios y entrenamientos</li>
+                <li>Estadísticas y seguimiento del rendimiento</li>
+                <li>Registros de actividad diaria</li>
+            </ul>
+
+            <p class="tech">JAVA · POO · SWING · XML · MySQL</p>
+
+            <p class="status">
+                <span class="completed">Completado</span>
+            </p>
+
+            <div class="project-links">
+                <a href="https://github.com/pmorilla-04/ProjecteFinal_GestorEntranaments" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-small">
+
+        <div class="project-card hidden" data-category="html">
+            <img src="../img/03_mockup-mario.png" alt="Mario Website">
+            <h3>Web Mario</h3>
+            <p>Sitio web de estilo retro inspirado en Super Mario.</p>
+            <p class="tech">HTML · CSS · JavaScript</p>
+            <p class="status"><span class="completed">Completado</span></p>
+            <div class="project-links">
+                <a href="https://github.com/pmorilla-04/supermario" target="_blank">GitHub</a>
+                <a href="https://bross.webcindario.com" target="_blank">Website</a>
+            </div>
+        </div>
+
+        <div class="project-card hidden" data-category="html">
+            <img src="../img/04_mockup-esqui.png" alt="Ski Website">
+            <h3>Web Ski</h3>
+            <p>Proyecto de interfaz de usuario limpia sobre experiencias de esquí.</p>
+            <p class="tech">HTML · CSS · JavaScript · Bootstrap</p>
+            <p class="status"><span class="completed">Completado</span></p>
+            <div class="project-links">
+                <a href="https://github.com/pmorilla-04/esqu-/tree/main" target="_blank">GitHub</a>
+                <a href="https://esqui.webcindario.com" target="_blank">Website</a>
+            </div>
+        </div>
+
+        <div class="project-card hidden" data-category="html">
+            <img src="../img/06_mockup-viatjesbici.png" alt="Cycling Website">
+            <h3>Web Ciclismo</h3>
+            <p>Proyecto sobre rutas y experiencias ciclistas.</p>
+            <p class="tech">HTML · CSS · WordPress · Elementor</p>
+            <p class="status"><span class="completed">Completado</span></p>
+        </div>
+
+        <div class="project-card hidden" data-category="js">
+            <img src="../img/05_mockup-calculadora.png" alt="Calculator">
+            <h3>Calculadora básica</h3>
+            <p>Proyecto para practicar los conceptos básicos de JavaScript.</p>
+            <p class="tech">HTML · CSS · JavaScript</p>
+            <p class="status"><span class="completed">Completado</span></p>
+            <div class="project-links">
+                <a href="https://github.com/pmorilla-04/calculadora" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="skills hidden" id="skills">
+
+  <h2>Skills</h2>
+
+  <div class="skills-main">
+
+    <div class="skill">
+      <p>HTML</p>
+      <div class="progress-bar">
+        <div class="progress html"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>CSS</p>
+      <div class="progress-bar">
+        <div class="progress css"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="progress-bar">
+        <div class="progress js"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skills-extra">
+    <p>Otras herramientas:</p>
+    <ul>
+      <li>WordPress</li>
+      <li>Elementor</li>
+      <li>Git & GitHub</li>
+      <li>Java (Swing, XML)</li>
+    </ul>
+  </div>
+
+</section>
+
+<section class="about hidden" id="about">
+
+    <div class="about-img">
+        <img src="../img/07_about-me.jpeg" alt="Pau">
+    </div>
+
+    <div class="about-content">
+        <h2>SOBRE MÍ</h2>
+        <p>Soy un estudiante de Desarrollo de Aplicaciones Web (DAW) apasionado por la programación y el desarrollo front-end.</p>
+        <p>Me gusta crear sitios web limpios e interactivos mientras mejoro continuamente mis habilidades.</p> 
+    </div>
+
+    <div class="about-info">
+        <p><strong>Nombre: </strong>Pau</p>
+        <p><strong>Rol: </strong>Estudiante de DAW</p>
+        <p><strong>Enfoque: </strong>Desarrollo front-end</p>
+    </div>
+    
+    <div class="about-hobbies">
+        <span><i class="fa-solid fa-code"></i>Desarrollo web</span>
+        <span><i class="fa-solid fa-person-biking"></i> Ciclismo</span>
+        <span><i class="fa-solid fa-person-skiing"></i> Ski</span>
+        <span><i class="fa-solid fa-van-shuttle"></i>Vida camper</span>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contacto</h2>
+
+    <p class="contact-text">
+        ¿Os interesa trabajar juntos o tenéis alguna idea en mente?<br>
+        No dudéis en contactar conmigo por correo electrónico o conectar conmigo en LinkedIn.<br>
+        ¡Me encantaría saber de vosotros!
+    </p>
+
+    <div class="contact-buttons">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="mailto:pmorilla.dev@gmail.com">Email</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 <strong>Diseño de Pmorilla</strong> • Todos los derechos reservados</p>
+    <p>Estudiante de diseño y programación web</p>
+</footer>
+
+<button class="top-btn">↑</button>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
