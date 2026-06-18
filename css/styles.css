@@ -104,7 +104,74 @@ p {
   font-size: var(--text-body);
 }
 
+/* =========================================================
+                    LANDING PAGE
+   ========================================================= */
+.landing-page{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(
+        135deg,
+        var(--color-bg),
+        var(--color-bg-secondary)
+    );
+    font-family: var(--font-body);
+}
 
+.language-container{
+    text-align:center;
+    background-color: var(--color-white);
+    padding:60px;
+    border-radius:20px;
+    box-shadow: var(--shadow-hover);
+    max-width:600px;
+    width:90%;
+}
+
+.landing-title{
+    font-family: var(--font-title);
+    font-size: var(--text-hero);
+    color: var(--color-text);
+    margin-bottom:10px;
+}
+
+.landing-subtitle{
+    color: var(--color-text-secondary);
+    font-size: var(--text-body);
+    margin-bottom:40px;
+}
+
+.landing-text{
+    color: var(--color-text);
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.language-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.language-btn{
+    text-decoration:none;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding:12px 24px;
+    border-radius:10px;
+    font-weight:600;
+    transition:all 0.3s ease;
+}
+
+.language-btn:hover{
+    background-color: var(--color-primary-hover);
+    transform:translateY(-3px);
+    box-shadow: var(--shadow-light);
+}
 /* =========================================================
    📌 HEADER / NAVIGATION
    Main site navigation bar
@@ -152,6 +219,13 @@ p {
     border-radius: 25px;
 }
 
+.active-language {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+}
 
 /* =========================================================
    🖥️ HERO / INTRO SECTION
