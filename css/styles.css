@@ -801,11 +801,11 @@ p {
     padding: 20px 0;
     text-align: center;
     gap: 15px;
-  }
+}
 
-  .menu-list:show{
+.menu-list.active{
     display: flex;
-  }
+}
 
   /* HERO */
   .contentbanner{
@@ -819,16 +819,39 @@ p {
   .projects{
     padding: 50px 5%;
   }
-  .projects-featured{
-    gap: 20px;
+.project-small {
+    flex-direction: column;
   }
+
+  .project-featured {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-featured img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info {
+    width: 100%;
+  }
+}
   .project-card img{
     height: 120px;
   }
   /* ABOUT */
+    .about{
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
    .about-img img {
-    width: 160px;
-  }
+      width: 180px;
+    }
+    .about-content{
+      max-width: 100%;
+    }
   /* CONTACT */
   /* BACK TO TOP */
   .top-btn {
@@ -836,4 +859,3 @@ p {
     right: 15px;
     padding: 10px;
   }
-}

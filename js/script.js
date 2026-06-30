@@ -92,9 +92,9 @@ window.addEventListener('load', showOnScroll);
 
 
 //MENU
-const hamburger = document.querySelector('.hamburger');
-  const menu = document.querySelector('.menu-list');
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu-list");
 
-  hamburger.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
