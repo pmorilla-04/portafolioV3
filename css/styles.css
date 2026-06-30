@@ -227,6 +227,13 @@ p {
     font-weight: 600;
 }
 
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: var(--color-bg);
+  cursor: pointer;
+}
+
 /* =========================================================
    🖥️ HERO / INTRO SECTION
    Full screen landing banner
@@ -769,10 +776,20 @@ p {
 
 /* 📱 TABLET */
 @media (max-width: 768px) {
-
+  .header{
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
 }
 
 /* 📱 MOBILE */
 @media (max-width: 480px) {
+  .hamburger{
+    display: block;
+    font-size: 28px;
+    color: var(--color-bg);
+    cursor: pointer;
+  }
 
 }
