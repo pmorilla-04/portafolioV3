@@ -89,3 +89,12 @@ function showOnScroll() {
 // Trigger animation on scroll and initial load
 window.addEventListener('scroll', showOnScroll);
 window.addEventListener('load', showOnScroll);
+
+
+//MENU
+const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu-list');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
