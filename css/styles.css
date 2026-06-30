@@ -775,12 +775,76 @@ p {
    ========================================================= */
 
 /* 📱 TABLET */
+/* 📱 TABLET */
 @media (max-width: 768px) {
+
+  /* HEADER */
   .header{
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
+    padding: 15px 5%;
   }
+
+  .name{
+    font-size: 22px;
+  }
+
+  .menu-list{
+    gap: 20px;
+  }
+
+  /* HERO */
+
+  .contentbanner{
+    width: 80%;
+  }
+
+  .contentbanner h1{
+    font-size: 42px;
+  }
+
+  .contentbanner p{
+    font-size: 18px;
+  }
+
+  /* PROJECTES */
+
+  .projects{
+    padding: 70px 6%;
+  }
+
+  .project-featured{
+    gap: 30px;
+  }
+
+  .project-featured img{
+    width: 45%;
+  }
+
+  .project-card img{
+    height: 180px;
+  }
+
+  /* SKILLS */
+
+  .skills-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ABOUT */
+
+  .about{
+    gap: 40px;
+  }
+
+  .about-img img{
+    width: 220px;
+  }
+
+  /* CONTACT */
+
+  .contact{
+    padding: 70px 6%;
+  }
+
 }
 
 /* 📱 MOBILE */
