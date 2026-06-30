@@ -792,4 +792,17 @@ p {
     cursor: pointer;
   }
 
+  .menu-list{
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .menu-list:show{
+    display: flex;
+  }
 }
