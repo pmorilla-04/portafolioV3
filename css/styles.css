@@ -785,6 +785,7 @@ p {
 
 /* 📱 MOBILE */
 @media (max-width: 480px) {
+  /* HEADER */
   .hamburger{
     display: block;
     font-size: 28px;
@@ -805,4 +806,26 @@ p {
   .menu-list:show{
     display: flex;
   }
+
+  /* HERO */
+  .contentbanner{
+    width: 90%;
+  }
+
+  .contentbanner h1{
+    font-size: 28px;
+  }
+  /* PROJECTS */
+  .projects{
+    padding: 50px 5%;
+  }
+  .projects-featured{
+    gap: 20px;
+  }
+  .project-card img{
+    height: 120px;
+  }
+  /* ABOUT */
+  /* CONTACT */
+  /* BACK TO TOP */
 }
