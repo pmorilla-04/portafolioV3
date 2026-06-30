@@ -826,6 +826,14 @@ p {
     height: 120px;
   }
   /* ABOUT */
+   .about-img img {
+    width: 160px;
+  }
   /* CONTACT */
   /* BACK TO TOP */
+  .top-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
+  }
 }
